@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images transformedim</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(195, 248, 248);
+    }
+
+    img {
+      margin: 30px;
+      transition: all 1500ms ease-in-out;
+      border-radius: 10px;
+    }
+    .lisbon {
+        transform: scale(0.9);
+    }
+
+    .aveiro {
+        transform: rotate(80deg);
+    }
+    .algarve {
+        transform: translateX(-50px) rotate(-25deg) scale(1.2);
+    
+    }
+    .sintra {transform: translatey(-70px) scale(1) rotate(30deg) translateX(200px);}
+
+    .braga { transform: translateX(150px) scaleX(0.5) rotate(50deg) translateY(-80px);}
+
+    img:hover {
+      transform: scale(1.5) rotatex(360deg);
+    }
+  </style>
+  <body>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44QymgPR-uNGncwcxrpUF3uhQzoobkUAQXQ&usqp=CAU"
+      alt="" class="lisbon"
+    />
+    <img
+      src="https://deih43ym53wif.cloudfront.net/aveiro-portugal-shutterstock_1581251188.jpg_df3ad75825.jpg"
+      alt=""
+      height="200" class="aveiro"
+    />
+
+    <img
+      src="https://cdn.pixabay.com/photo/2017/12/20/10/48/portugal-3029665__480.jpg"
+      alt=""
+      height="200" class="algarve"
+    />
+    <img
+      src="https://media.timeout.com/images/105518674/750/422/image.jpg"
+      alt=""
+      height="200" class="sintra"
+    />
+    <img
+      src="https://d3dqioy2sca31t.cloudfront.net/Projects/cms/production/000/033/302/slideshow/e417e4e973f6da590e3b9ead3a358fca/slide-portugal-main-evora-church.jpg"
+      alt=""
+      height="200" class="braga"
+    />
+  </body>
+</html>
