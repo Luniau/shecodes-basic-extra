@@ -10,8 +10,9 @@
  .black {
     background-color: black;
  }
- .white {
-    background-color: white;
+ .black button {
+    background: white;
+    color: black;
  }
 button { 
     background-color: black;
@@ -20,19 +21,15 @@ button {
     border-radius: 4px;
    }
 </style>
-<body class="change">
+<body>
     
-    <button class="changeWhite">Dark theme</button>
+    <button>Dark theme</button>
 </body>
 <script>
 function darkTheme () {
-    let change = document.querySelector(".change");
-    change.classList.add("black");
+    let body = document.querySelector("body");
+    body.classList.add("black");
     
-    function whiteTheme () {
-        let changeWhite = document.querySelector(".changeWhite");
-        changeWhite.classList.add("white");
-    }
 }
 
 
