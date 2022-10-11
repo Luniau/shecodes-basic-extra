@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=but, initial-scale=1.0">
+    <title>Manipulation</title>
+</head>
+<style>
+ .black {
+    background-color: black;
+ }
+ .white {
+    background-color: white;
+ }
+button { 
+    background-color: black;
+    color: white;
+    margin: 20px;
+    border-radius: 4px;
+   }
+</style>
+<body class="change">
+    
+    <button class="changeWhite">Dark theme</button>
+</body>
+<script>
+function darkTheme () {
+    let change = document.querySelector(".change");
+    change.classList.add("black");
+    
+    function whiteTheme () {
+        let changeWhite = document.querySelector(".changeWhite");
+        changeWhite.classList.add("white");
+    }
+}
+
+
+let button = document.querySelector ("button");
+button.addEventListener ("click", darkTheme);
+
+
+</script>
+</html>
